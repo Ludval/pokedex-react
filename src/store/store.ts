@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import pokemonReducer from './Pokemon.store'
+import { configureStore } from '@reduxjs/toolkit';
+import pokemonReducer from './Pokemon.store';
 
-export default configureStore({
+export const store = configureStore({
   reducer: {
     pokemon: pokemonReducer
-  },
-})
+  }
+});
+
+export type AppDispatch = typeof store.dispatch;
