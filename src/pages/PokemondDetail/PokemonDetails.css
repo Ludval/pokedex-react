@@ -20,9 +20,56 @@ img {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+  margin-top: 16px;
 }
 
 .type-container {
   width: 60px;
   height: 60px;
+}
+
+.back {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.card {
+  width: 250px;
+  text-align: center;
+  border-right: 1px solid black;
+  margin-right: 16px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.grid-container {
+  width: 50%;
+}
+
+.grid-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
 }

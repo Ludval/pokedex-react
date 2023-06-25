@@ -14,12 +14,12 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className='App'>
-      <header>
+    <div>
+      <header role='heading'>
         <Header generation={generation} handleClick={handleClick} />
       </header>
 
-      <main className='App-header'>
+      <main className='app-main'>
         <Routes>
           <Route path='/' element={<PokemonList generation={generation} />} />
           <Route path='detail/:id' element={<PokemonDetails />} />

@@ -24,6 +24,9 @@
         "@typescript-eslint/consistent-type-imports": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
-        "multiline-ternary": "off"
+        "multiline-ternary": "off",
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/array-type": "off",
+        "@typescript-eslint/consistent-type-assertions": "off"
     }
 }

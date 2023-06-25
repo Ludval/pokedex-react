@@ -5,19 +5,19 @@ import { Pokemon } from '../interfaces/Pokemon.interface';
 export const getPokemonDetails = createAsyncThunk('pokemon-detail', async (id: number) => PokemonService.getById(id));
 export const getPokemonList = createAsyncThunk('pokemon-list', async (generation: number) => PokemonService.getAll(generation));
 
-interface PokemonSlice {
-  pokemonDetails: Pokemon | null;
+export interface PokemonSlice {
+  pokemonDetails: Pokemon;
   pokemonList: Pokemon[];
   isLoading: boolean;
 }
 
 const initialState: PokemonSlice = {
-  pokemonDetails: null,
+  pokemonDetails: {} as Pokemon,
   pokemonList: [],
   isLoading: true
 };
 
-export const counterSlice = createSlice({
+export const pokemonSlice = createSlice({
   name: 'pokemon',
   initialState,
   reducers: {},
@@ -39,4 +39,4 @@ export const counterSlice = createSlice({
   }
 });
 
-export default counterSlice.reducer;
+export default pokemonSlice.reducer;

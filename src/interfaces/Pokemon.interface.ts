@@ -51,11 +51,11 @@ export interface Name {
 }
 
 export interface Pokemon {
-  pokedixId: number;
+  pokedexId: number;
   generation: number;
   category: string;
   name: Name;
-  sprites: Array<Sprite>;
+  sprites: Sprite;
   types: Array<Type>;
   talents: Array<Talent>;
   stats: Stats;
